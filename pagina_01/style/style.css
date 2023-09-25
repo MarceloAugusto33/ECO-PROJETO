@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+:root{
+    --fonte1: 'Inter'
+    --fonte2: 'Poppins'
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(211, 211, 211, 0.122);
+}
+#foto-principal-main{
+    display: block;
+    height: 500px;
+    color: rgb(255, 255, 255);
+    background: white url('/imagems/acmella-120_0c18e0b0-4cc8-4f8e-944b-e70685eb1d1c_1024x1024.webp') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    font-family: 'Inter';
+    text-align: center;
+}
+#h1-foto-principal{
+    background-color: rgba(0, 0, 0, 0.252);
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav{
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.885);
+}
+main h1{
+    text-align: center;
+    font-family: 'Inter';
+    color: #ffda05;
+
+}
+hr{
+    width: 400px;
+    background-color: black;
+}
+main{
+    max-width: 1000px;
+    min-width: 300;
+    margin: auto;
+    background-color: white;
+    padding-top: 30px;
+    box-shadow: 1px 1px 10px black;
+}
+#amazonia{
+    height: 500px;
+    background: white url('https://images.pexels.com/photos/2739666/pexels-photo-2739666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    margin-right: 10px;
+}
+#produtos{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+main > p{
+    text-align: justify;
+    text-indent: 50px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    color: #ad9302;
+}
+.nav-link{
+    color: #d3b406;
+}
+.btn{
+    background: #ad9302;;
+    border: #ffd900;;
+}
+main img{
+    display: block;
+    margin: auto;
+}
+footer {
+    width: 100%;
+    background-color: #C1FF72;
+    font: normal 11pt arial;
+    padding: 0;
+    margin: 0;
+}
+#container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container-footer p {
+    margin: 10px;
+}
+#ti{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+@media screen  and (max-width: 768px){
+    main{
+        max-width: 1000px;
+        min-width: 300;
+        margin: auto;
+        background-color: white;
+        padding-top: 30px;
+        box-shadow: 1px 1px 10px black;
+    }
+    main img{
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 10px;
+    }
+    
+}
+    

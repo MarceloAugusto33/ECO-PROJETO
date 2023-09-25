@@ -16,13 +16,15 @@
             <a class="nav-link" href="#titulo-contato">CONTATOS</a>
         </nav>
     </header>
-    <section class="foto-principal-main">
+
+    <section class="foto-principal-main" id="foto-principal-main">
     </section>
     <main>
+        <div id="t1"></div>
         <h1 id="titulo-acmella">ACMELLA</h1><hr>
         <p>Planta cultivada na região norte do país, onde é utilizada como condimento culinário amazônico, principalmente para ao preparar o famoso “molho-de-tucupi”. As folhas e inflorescência são empregadas na medicina caseira na região norte do país, para tratamento de males da boca e garganta, além de tuberculose e litíase pulmonar. As folhas e flores quando mastigadas dão uma sensação de formigamento nos lábios e na língua devido sua ação anestésica local, sendo por isso usada para dor-de-dente como anestésico e como estimulante do apetite. O chá das folhas e inflorescência é empregada também, contra anemia, escorbuto, dispepsia e como estimulante da atividade estomáquica.[5] A substancia responsável pela ação anestésica na mucosa bucal é uma isobutilamida denominada espilantol. Na sua composição química, além de espilantol, são citados a espilantina,afinina, colina e fitosterina.</p>
         <p>Uma nova espécie para o gênero Acmella foi detectada. As exsicatas coletadas no município de Soure, na Ilha do Marajó, Pará, continham diversos indivíduos que haviam sido identificados como Spilanthes sp. e Eclipta sp., permanecendo assim, incorporados junto a esses gêneros. Após análise minuciosa do material, com base na fotografia dos tipos, descrições obtidas da revisão do gênero contidas em Jansen (1985), bem como, consultas aos acervos do Jardim Botânico do Rio de Janeiro (RB) e Museu Nacional (R) foi constatado que se tratava de uma nova espécie para a ciência.</p>
-        <section class="foto-principal-main-amazonia">
+        <section class="foto-principal-main-amazonia" id="ft-ama">
         </section>
         <h1 id="titulo-produtos">Produtos</h1><hr>
         <div id="container">
@@ -98,5 +100,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 110 /* altura do seu menu fixo */,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });</script>
 </body>
 </html>

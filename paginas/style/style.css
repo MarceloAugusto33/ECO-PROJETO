@@ -28,6 +28,7 @@ header{
     top: 0;
     width: 100vw;
     box-shadow: 1px 1px 10px black;
+    font-family: 'arial';
 }
 .nav > a:hover{
     font-family: 'Inter';

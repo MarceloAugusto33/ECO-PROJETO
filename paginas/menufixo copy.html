@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        /*Importando as 2 fontes que eu usei no site original*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+        :root{
+            --fonte1: 'Inter'
+            --fonte2: 'Poppins'
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: 1px 1px 10px black;
+        }
+        header a {
+            font-family: 'Inter';
+            color: #ffda05;
+        }
+        .nav{
+            height: 60px;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+        main{
+            margin-top: 100px;
+        }
+        main h2{
+            text-align: center;
+            color: rgb(207, 177, 7);
+            font-family: 'Inter','Arial','sans-senrif';
+            margin: 30px;
+        }
+        main h1{
+            text-align: center;
+            color: #303136;
+            font-family: 'Inter','Arial','sans-senrif';
+            margin: 30px;
+        }
+        .card{
+            margin-right: 10px;
+            position: static;
+        }
+        #produtos{
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        footer {
+            width: 100%;
+            background-image: linear-gradient(to right,rgba(255, 192, 203, 0.234),rgba(255, 166, 0, 0.603));
+            font: normal 11pt arial;
+            padding: 0;
+            margin-top: 30px;
+        }
+        #container-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #container-footer p {
+            margin: 10px;
+        }
+        #foto-principal{
+            height: 500px;
+            background: white url('/imagems/fundo-rosa.png') no-repeat center  fixed;
+            background-size: cover;
+            margin-top: 60px;
+        }
+        #foto-principal > p{
+            padding-top: 120px;
+            color: #303136;
+            height: 500px;
+            text-align: center;
+            font-size: 100px;
+            font-family: 'Poppins','arial';
+            background-image: linear-gradient(to right,rgba(255, 192, 203, 0.234),rgba(255, 166, 0, 0.603));
+        }
+        @media screen and (max-width:768px){
+            main{
+            max-width: 1000px;
+            min-width: 300px;
+            margin: auto;
+            background-color: white;
+            padding-top: 30px;
+            box-shadow: 1px 1px 10px black;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .card{
+                margin-bottom: 10px;
+            }
+            .nav{
+                height: 100px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .nav > a:hover{
+                transform: scale(1.2);
+                color: #ffd900;
+                translate: 1rem;
+            }
+            #foto-principal{
+            height: 500px;
+            background: white url('/imagems/fundo-rosa.png') no-repeat top left  fixed;
+            background-size: cover;
+        }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <a class="nav-link" href="#titulo-acmella">ACMELLA</a>
+            <a class="nav-link" href="#titulo-produtos">PRODUTOS</a>
+            <a class="nav-link" href="#titulo-sobre">SOBRE</a>
+            <a class="nav-link" href="#titulo-contato">CONTATOS</a>
+        </nav>
+    </header>
+    <section id="foto-principal">
+        <p>PRODUTOS ACMELLA</p>
+    </section>
+    <main>
+        <h1>Produtos</h1><hr>
+        <h2>Capilar</h2>
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Shampoo</h5>
+                  <p class="card-text">R$ 65,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image (1).jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Condicionador</h5>
+                  <p class="card-text">R$ 70,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image (2).jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Mascara Capilar</h5>
+                  <p class="card-text">R$ 95,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+        </div>
+        <h2>Facial</h2>
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image (3).jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">hidratante Labial</h5>
+                  <p class="card-text">R$ 55,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image (4).jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Serum Facial</h5>
+                  <p class="card-text">R$ 125,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/imagems/image (5).jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Creme facial</h5>
+                  <p class="card-text">R$ 110,00</p>
+                  <a href="#" class="btn btn-primary">Visitar</a>
+                </div>
+              </div>
+        </div>
+
+
+    </main>
+    <footer id="titulo-contato">
+        <div id="container-footer">
+            <h1>CONTATOS</h1>
+            <p>©2023 Acmella Inova Amazonia</p>
+            <p>Email:AcmellaIA@gmail.com</p>
+            <p>Telefone:+55 91 99999-9999</p>
+            <p>Belém - PA</p>
+        </div>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -20,7 +20,6 @@ body{
     background-size: cover;
     font-family: 'Inter';
     text-align: center;
-    margin-top: 60px;
 }
 header{
     position: fixed;
@@ -141,6 +140,15 @@ footer {
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.logo{
+    min-width: 280px;
+    max-width: 550px;
+    display: block;
+    margin: auto;
+}
+#Menu{
+    background-color: #ffffff;
+}
 @media screen  and (max-width: 768px){
     main{
         max-width: 1000px;
@@ -175,5 +183,12 @@ footer {
         color: #ffd900;
         translate: 1rem;
     }
+    .logo{
+        margin-top: 78px;
+        min-width: 280px;
+        max-width: 500px;
+        display: block;
+    }
+    
 }
     

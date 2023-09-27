@@ -185,8 +185,7 @@ footer {
     }
     .logo{
         margin-top: 78px;
-        min-width: 280px;
-        max-width: 500px;
+        width: 300px;
         display: block;
     }
     

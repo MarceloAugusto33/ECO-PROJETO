@@ -148,7 +148,7 @@ footer {
 }
 #Menu{
     background-color: #ffffff;
-    width: 300px;
+    width: 600px;
     margin: auto;
 }
 @media screen  and (max-width: 768px){
@@ -189,6 +189,9 @@ footer {
         margin-top: 78px;
         width: 100%;
         display: block;
+    }
+    #Menu{
+        width: 280px;
     }
     
 }

@@ -193,6 +193,9 @@ footer {
     #Menu{
         width: 280px;
     }
+    hr{
+        width: 40%;
+    }
     
 }
     

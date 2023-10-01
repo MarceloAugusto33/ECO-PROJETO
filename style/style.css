@@ -20,6 +20,7 @@ body{
     background-size: cover;
     font-family: 'Inter';
     text-align: center;
+    box-shadow: 2px 2px 10px black;
 }
 header{
     position: fixed;
@@ -28,6 +29,10 @@ header{
     width: 100vw;
     box-shadow: 1px 1px 10px black;
     font-family: 'Poppins';
+}
+.nav > a:hover{
+    font-family: 'Inter';
+    color: #ffda05;
 }
 .nav > a:hover{
     font-family: 'Inter';
@@ -56,7 +61,11 @@ main{
     box-shadow: 1px 1px 10px black;
 }
 .foto-principal-main-amazonia{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5em;
     height: 500px;
     color: rgb(255, 255, 255);
     background: white url('https://images.pexels.com/photos/2739666/pexels-photo-2739666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
@@ -64,13 +73,7 @@ main{
     font-family: 'Inter';
     text-align: center;
     margin-top: 65px;
-}
-#amazonia{
-    height: 500px;
-    background: white url('https://images.pexels.com/photos/2739666/pexels-photo-2739666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
-    background-size: cover;
     margin-bottom: 20px;
-    position: relative;
 }
 #container{
     display: flex;
@@ -85,18 +88,23 @@ main{
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.card:hover .btn{
+    transform: scale(1.15);
+    transition: 1s;
+}
 #produtos{
     display: block;
     margin: auto;
     margin-bottom: 30px;
     background-color: #FF8C00;
-    border-color: #000000;
+    border: 0px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.444);
     
 }
 #produtos:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 1s;
+    background-color: #15c426;
 }
 .btn{
     background-color:#e98203;
@@ -125,6 +133,7 @@ h2{
 }
 .nav > a{
     color: #FF8C00;
+    margin: auto;
 }
 main img{
     display: block;
@@ -140,11 +149,8 @@ footer {
 }
 #container-footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#container-footer p {
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #ti{
     position: absolute;
@@ -171,6 +177,21 @@ footer {
 }
 #logo1{
     background-color: white;
+}
+.footer-colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+.footer-colum p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+#info{
+    margin: 20px;
 }
 @media screen  and (max-width: 768px){
     main{
@@ -204,7 +225,6 @@ footer {
     .nav > a:hover{
         transform: scale(1.2);
         color: #ffd900;
-        translate: 1rem;
     }
     .logo{
         margin-top: 78px;
@@ -219,6 +239,27 @@ footer {
     }
     .img-fluid{
         margin-top: 100px;
+    }
+    #container-footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+    }
+    .footer-colum{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .footer-colum h3{
+        font-weight: bolder;
+    }
+    .footer-colum p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #info p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
     }
     
 }

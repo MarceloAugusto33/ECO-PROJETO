@@ -76,15 +76,16 @@
         }
         footer {
             width: 100%;
-            background-image: linear-gradient(to right,rgba(255, 192, 203, 0.234),rgba(255, 72, 0, 0.894));
-            font: normal 11pt arial;
+            background-color: #FF8C00;
+            color: #ffffff;
+            font: normal 11pt 'Inter';
             padding: 0;
-            margin-top: 30px;
+            margin: 0;
         }
         #container-footer{
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
         }
         #container-footer p {
             margin: 10px;
@@ -104,9 +105,8 @@
             background-image: linear-gradient(to right,rgba(255, 192, 203, 0.234),rgba(255, 166, 0, 0.603));
         }
         .nav > a:hover{
-                transform: scale(1.2);
+                transform: scale(1.12);
                 color: #ffd900;
-                translate: 1rem;
         }
         .nav > a{
             color: #FF8C00;
@@ -122,6 +122,26 @@
                 display: block;
                 margin: auto;
             }
+        .footer-colum{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .footer-colum p{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #info P {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #info{
+            margin: 20px;
+        }
         @media screen and (max-width:768px){
             main{
             max-width: 1000px;
@@ -171,13 +191,31 @@
             width: 100%;
             font-size: 60px;
             }
-            footer{
-                margin-top: 0;
-            }  
             #logo{
                 width: 50%;
                 display: block;
                 margin: auto;
+            }
+            #container-footer{
+                display: flex;
+                flex-direction: column;
+                margin: 0px 20px 0px 20px;
+            }
+            .footer-colum{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .footer-colum h3{
+                font-weight: bolder;
+            }
+            .footer-colum p{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #info p{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
             }
         }
     </style>
@@ -279,11 +317,22 @@
     </main>
     <footer id="titulo-contato">
         <div id="container-footer">
-            <h1>CONTATOS</h1>
-            <p>©2023 Acmella Inova Amazonia</p>
-            <p>Email:AcmellaIA@gmail.com</p>
-            <p>Telefone:+55 91 99999-9999</p>
-            <p>Belém - PA</p>
+            <section class="footer-colum">
+                <h3>Informaçoes de contato</h3>
+                <p>Endereço: Rua das Palmeiras, 123, BELÈM /PA</p>
+                <p>Telefone: (99) 1234-5678</p>
+                <p>E-mail: info@acmellainovaamazonia.com</p>
+            </section>
+            <section id="info">
+                <h3>Informações da Empresa</h3>
+                <p>A Acmella Inova Amazônia é uma empresa comprometida com a preservação e valorização da biodiversidade amazônica. Nossa missão é oferecer produtos sustentáveis e de alta qualidade.</p>
+                <p>A Acmella Inova Amazônia é uma empresa apaixonada pela Amazônia, comprometida com a proteção de sua diversidade única. Nossa missão é oferecer produtos excepcionais que não apenas realcem a sua beleza, mas também preservem o esplendor natural da floresta amazônica. </p>
+            </section>
+            <section class="footer-colum">
+                <h3>Depoimentos de Clientes:</h3>
+                <p>"Adoro os produtos da Acmella Inova Amazônia, são incrivelmente eficazes e sustentáveis!" - Maria S.</p>
+                <p>"A missão da empresa é admirável. Estou feliz em apoiar produtos que valorizam a Amazônia." - João R.</p>
+            </section>
         </div>
     </footer>
 

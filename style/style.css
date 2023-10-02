@@ -20,7 +20,7 @@ body{
     font-size: 2.5em;
     height: 500px;
     color: rgb(255, 255, 255);
-    background: white url('/imagems/ACMELLA\ OREACEA.jpg') no-repeat center center fixed;
+    background: white url('imagems/ACMELLA\ OREACEA.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Inter';
     text-align: center;
@@ -132,7 +132,7 @@ main{
     font-size: 2.5em;
     height: 500px;
     color: rgb(255, 255, 255);
-    background: white url('/imagems/RIO\ AMAZONAS.jpg') no-repeat center center fixed;
+    background: white url('imagems/RIO\ AMAZONAS.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Inter';
     text-align: center;

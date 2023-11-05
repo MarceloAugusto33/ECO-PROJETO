@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+
+
+
     <style>
         /*Importando as 2 fontes que eu usei no site original*/
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
@@ -24,7 +26,7 @@
             position: fixed;
             left: 0;
             top: 0;
-            width: 100%;
+            width: 100vw;
             box-shadow: 1px 1px 10px black;
         }
         header a {
@@ -46,6 +48,48 @@
         }
         main{
             margin-top: 68px;
+            padding-top: 30px;
+        }
+        h1{
+            text-align: center;
+            color: #dbba00;
+        }
+        #principal{
+            min-width: 300px;
+            max-width: 900px;
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            margin: auto;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+            border-radius: 20px 20px 0px 0px;
+        }
+        #principal img{
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+        #principal p{
+            padding-bottom: 10px;
+            margin-left: 42px;
+            text-align: justify;
+            margin-right:30px ;
+        }
+        .sub-titulo{
+            color:#FF8C00;
+        }
+        #principal input{
+            margin: auto;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.411);
+            box-shadow: 1px 1px 10px solid;
+            background-color: #FF8C00;
+            color: white;
+            font-family: 'Inter';
+            margin-bottom: 15px;
+        }
+        #principal input:hover{
+            transform: scale(1.05);
+            transition: 1s;
+            background-color: #15c426;
         }
         footer {
             width: 100%;
@@ -81,6 +125,10 @@
             margin: 20px;
 
         }
+        h2{
+        text-align: center;
+        color:#e1e109;
+        }
         @media screen and (max-width:768px){
             .nav{
                 background-color: rgb(255, 255, 255);
@@ -111,8 +159,8 @@
             #info p{
                 font-family: Arial, Helvetica, sans-serif;
             }
-            main{
-                margin-top: 150px;
+            h1{
+                margin-top: 60px;
             }
         }
     </style>
@@ -120,34 +168,35 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="nav-link" href="#">ACMELLA</a>
-            <a class="nav-link" href="#">PRODUTOS</a>
+            <a class="nav-link" href="index.html">ACMELLA</a>
+            <a class="nav-link" href="PRODUTOS.html">PRODUTOS</a>
             <a class="nav-link" href="#">CONTATOS</a>
         </nav>
     </header>
     <main>
-    ESCREVA AQUI
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi quos facere a vero adipisci dolorum? Rem quidem officiis consectetur cumque facilis? Inventore sit rem quasi accusamus mollitia, nostrum quibusdam!</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <h1>HIDRATANTE LABIAL</h1>
+        <section id="principal">
+            <img src="../imagems/image (3).jpg" alt="FOTO DO HIDRANTE LABIAL">
+            <p>
+                <span class="sub-titulo">HIDRATANTE LABIAL – 28g</span>
+            </p>
+            <p>
+                <span class="sub-titulo">FUNÇAO:</span> Nosso Hidratante Labial Amazônia Fresh é uma mistura luxuosa de ingredientes naturais da Amazônia projetada para proporcionar hidratação profunda e duradoura aos seus lábios. Ele ajuda a suavizar os lábios secos e rachados, deixando-os com uma sensação de frescor e maciez.</p>
+            <p>
+                <span class="sub-titulo">Modo de Usar:</span> Aplique uma camada fina do Hidratante Labial Amazônia Fresh nos lábios sempre que sentir a necessidade de hidratação. Pode ser usado várias vezes ao dia.</p>
+            <p>
+                <span class="sub-titulo">Composição:</span> Este hidratante labial é formulado com ingredientes cuidadosamente selecionados da Amazônia, incluindo óleo de buriti, manteiga de cupuaçu e óleo de açaí. Esses ingredientes naturais são ricos em antioxidantes e ácidos graxos essenciais que ajudam a manter a saúde dos lábios.
+            </p>
+            <p>
+                <span class="sub-titulo">Precauções:</span> Evite o contato com os olhos e mantenha fora do alcance de crianças. Não aplique em pele irritada ou ferida. Em caso de irritação, suspenda o uso. Este produto é para uso externo apenas.
+            </p>
+            <p>
+                <span class="sub-titulo">Validade:</span> 2 anos
+            </p>
+            <input type="button" value="CONTATE-NOS">
+            <img src="imagems/Acmella.png" alt="">
+        </section>
+        
     </main>
     <footer id="titulo-contato">
         <div id="container-footer">

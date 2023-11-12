@@ -32,6 +32,10 @@ p{
     color: #FF8C00;
     text-decoration: none;
 }
+a:hover{
+    color: #ffda05;
+    text-decoration: underline;
+}
 .nav-bar > a > h1{
    color: #FF8C00;;
 }

@@ -64,6 +64,11 @@ hr{
     color: black;
     border: 1px solid #FF8C00;
 }
+#incompleto1{
+    background-color: transparent;
+    color: black;
+    border: 1px solid #FF8C00;
+}
 
 .container{
     display: flex;
